@@ -1,7 +1,7 @@
 CC = gcc
 CFLAG = -Wall -g
 TARGET = phone
-OBJS = main.o phone_fmt.o
+OBJS = phone.o phone_fmt.o
 $(TARGET): $(OBJS)
 	$(CC) -o $(TARGET) $(OBJS)
 phone.o: phone.c

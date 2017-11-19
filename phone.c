@@ -30,6 +30,9 @@ int main()
 		printf("%c", tel_num[i]);
 	}
 	printf("\n");
+	
+	printf("Output: ");
+	phone_fmt(tel_num);
 
 
 	return 0;
