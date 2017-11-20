@@ -7,11 +7,9 @@ int main()
 	int i = 0, j = 0;
 	char argm[200], tel_num[10];
 
-	printf("Please type your 10 digit phone number");
+	printf("\nPlease type your 10 digit phone number\n");
 	printf("Input: ");
 	scanf("%s", argm);
-
-	printf("%s\n", argm);
 
 	while(argm[i] != '\0') {
 	
@@ -25,14 +23,10 @@ int main()
 		
 		i++;
 	}
-
-	for(i = 0; i < 10; i++) {
-		printf("%c", tel_num[i]);
-	}
-	printf("\n");
 	
 	printf("Output: ");
 	phone_fmt(tel_num);
+	printf("\n\n");
 
 
 	return 0;
