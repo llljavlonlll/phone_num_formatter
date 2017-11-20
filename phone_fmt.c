@@ -1,10 +1,14 @@
+// Javlonbek Butabaev
+// cs2750 PA 5
+// 11/19/2017
+
 #include <stdio.h>
 #include <ctype.h>
 
 void phone_fmt(char tel_num[])
 {
 	int i;
-
+	
 	printf("(");
 	for(i = 0; i < 3; i++) {
 		printf("%c", tel_num[i]);

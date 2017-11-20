@@ -1,3 +1,7 @@
+// Javlonbek Butabaev
+// cs2750 PA 5
+// 11/19/2017
+
 #include <stdio.h>
 #include <ctype.h>
 #include "phone_fmt.h"
@@ -9,7 +13,9 @@ int main()
 
 	printf("\nPlease type your 10 digit phone number\n");
 	scanf("%s", argm);
-
+	
+	// Loop through user inpt string 
+	// and save digits in a new array
 	while(argm[i] != '\0') {
 	
 		if(isdigit(argm[i])) {
@@ -24,11 +30,13 @@ int main()
 		i++;
 	}
 
+	// Check if there are enough digits
 	if(j < 10) {
 		printf("ERROR:Not enough digits on input!\n\n");
 		return 0;
 	}
-	
+
+	// Output the final formatted number	
 	phone_fmt(tel_num);
 	printf("\n\n");
 
