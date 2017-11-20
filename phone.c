@@ -8,7 +8,6 @@ int main()
 	char argm[200], tel_num[10];
 
 	printf("\nPlease type your 10 digit phone number\n");
-	printf("Input: ");
 	scanf("%s", argm);
 
 	while(argm[i] != '\0') {
@@ -16,6 +15,7 @@ int main()
 		if(isdigit(argm[i])) {
 			tel_num[j] = argm[i];
 			j++;
+	
 			if(j == 10) {
 				break;
 			}
@@ -23,8 +23,12 @@ int main()
 		
 		i++;
 	}
+
+	if(j < 10) {
+		printf("ERROR:Not enough digits on input!\n\n");
+		return 0;
+	}
 	
-	printf("Output: ");
 	phone_fmt(tel_num);
 	printf("\n\n");
 
